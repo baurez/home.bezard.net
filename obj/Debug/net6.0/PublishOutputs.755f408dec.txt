@@ -1,0 +1,1 @@
+D:\Desktop\DOCS\GIT\home.bezard.net\bin\Debug\net6.0\publish\web.config
