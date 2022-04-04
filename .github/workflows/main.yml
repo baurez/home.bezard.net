@@ -12,7 +12,7 @@ jobs:
         
     - uses: actions/setup-dotnet@v2
       with:
-        dotnet-version: '6.0.1'
+        dotnet-version: '6.0.x'
     
     - run: dotnet publish home.bezard.net.csproj -c Release -o release --nologo
       
