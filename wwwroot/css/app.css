@@ -9,6 +9,7 @@
   --color-brown: #795548;
   --color-teal: #26a69a;
   --color-cyan: #00bcd4;
+  --color-blue: blue;
 
   --color-accent: black;
 }
@@ -161,6 +162,11 @@ body {
 .card.cyan {
   --color-accent: var(--color-cyan);
 }
+
+.card.blue {
+  --color-accent: var(--color-blue);
+}
+
 
 .loading {
   display: flex;
