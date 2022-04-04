@@ -11,7 +11,7 @@ jobs:
     - name: FTP-Deploy-Action
       uses: SamKirkland/FTP-Deploy-Action@3.1.1
       with:
-        ftp-server: ${{ secrets.sftp.bezard.net.FTP_SERVER }}
-        ftp-username: ${{ secrets.sftp.bezard.net.FTP_SERVER }}
-        ftp-password: ${{ secrets.sftp.bezard.net.FTP_SERVER }}
+        ftp-server: ${{ secrets.FTP_SERVER }}
+        ftp-username: ${{ secrets.FTP_SERVER }}
+        ftp-password: ${{ secrets.FTP_SERVER }}
         local-dir: /home/baurez/docker/mini-webserver/
