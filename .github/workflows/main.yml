@@ -20,11 +20,12 @@ jobs:
       run: ls
 
     - name: FTP-Deploy-Action
-      uses: wangyucode/sftp-upload-action@main
+      uses: Creepios/sftp-action@master
       with:
         host: ${{ secrets.FTP_SERVER }}
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
-        localDir: './release/wwwroot/'
-        remoteDir: '/home/baurez/docker/mini-webserver/'
+        localPath: './release/wwwroot/'
+        remotePath: '/home/baurez/docker/mini-webserver/'
         port: 22
+        forceUpload: true
