@@ -20,11 +20,11 @@ jobs:
       run: ls
 
     - name: FTP-Deploy-Action
-      uses: SamKirkland/FTP-Deploy-Action@master
+      uses: wangyucode/sftp-upload-action@main
       with:
-        server: ${{ secrets.FTP_SERVER }}
+        host: ${{ secrets.FTP_SERVER }}
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: './release/wwwroot/'
-        server-dir: '/home/baurez/docker/mini-webserver/'
+        localDir: './release/wwwroot/'
+        remoteDir: '/home/baurez/docker/mini-webserver/'
         port: 22
