@@ -1,13 +1,22 @@
 ﻿:root {
-    --bg: black;
+    --bg: white;
 }
 
 * {
     box-sizing: border-box;
 }
 
+#app {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
 html,
 body {
+    font-family: Lato, Verdana, Geneva, Tahoma, sans-serif;
     margin: 0px;
     padding: 0px;
     width: 100%;
@@ -20,66 +29,6 @@ body {
     justify-content: center;
     overflow: hidden;
 }
-
-#app {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    align-items: center;
-    justify-content: center;
-}
-
-.tuiles {
-    width: min(80vw, 80vh);
-    height: min(80vw, 80vh);
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    align-items: center;
-    gap: 1rem;
-}
-
-    .tuiles a {
-        --l: 50%;
-        --color-primary: hsl(var(--color), var(--l));
-        --color-primary-darker: hsl(var(--color), calc(var(--l) - 10%));
-        --color-primary-darkest: hsl(var(--color), calc(var(--l) - 30%));
-        --color-primary-lighter: hsl(var(--color), calc(var(--l) + 10%));
-        --color-primary-lightest: hsl(var(--color), calc(var(--l) + 30%));
-        --tuile-bg: var(--color-primary);
-        --tuile-bg-hover: var(--color-primary-darkest);
-        --tuile-border: var(--color-primary-darker);
-        --tuile-forecolor: var(--color-primary-darkest);
-        --tuile-hover-forecolor: var(--color-primary-lighter);
-        height: 100%;
-        width: 100%;
-        flex-grow: 1;
-        transition: all 0.5s;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 1rem;
-        font-family: Lato, Verdana, Geneva, Tahoma, sans-serif;
-        text-decoration: none;
-        text-align: center;
-        border-radius: 5px;
-        color: var(--tuile-forecolor);
-        background-color: var(--tuile-bg);
-        border: 2px solid var(--tuile-border);
-    }
-
-        .tuiles a:hover {
-            background-color: var(--tuile-bg-hover);
-            color: var(--tuile-hover-forecolor);
-            cursor: pointer;
-            border-radius: 15px;
-            transform: scaleX(105%) scaleY(105%);
-            text-decoration: none;
-        }
-
-.badges {
-    align-items: center;
-}
-
 
 .container {
     padding: 0px;
