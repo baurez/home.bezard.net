@@ -50,7 +50,6 @@ body {
         --tuile-border: var(--color-primary-darker);
         --tuile-forecolor: var(--color-primary-darkest);
         --tuile-hover-forecolor: var(--color-primary-lighter);
-        display: inline-block;
         height: 100%;
         width: 100%;
         flex-grow: 1;
@@ -212,7 +211,6 @@ body {
     position: absolute;
     color: white;
     font-size: 1.5em;
-    font-family: consolas;
     bottom: -120px;
     letter-spacing: 0.15em;
 }
