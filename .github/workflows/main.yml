@@ -28,4 +28,3 @@ jobs:
         localPath: './release/wwwroot/'
         remotePath: '/home/baurez/docker/mini-webserver/'
         port: 22
-        forceUpload: true
