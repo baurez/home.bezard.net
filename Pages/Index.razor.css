@@ -13,6 +13,16 @@
     
 }
 
+@media only screen and (max-width: 600px) {
+    body  
+
+    .tuiles {
+         grid-template-columns: repeat(1, 1fr);
+         display: flex;
+         flex-direction:column;
+    }
+}
+
     .tuiles a {
         --l: 50%;
         --color-primary: hsl(var(--color), var(--l), 75%);
